@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Open Board</title>
+	<link rel="stylesheet" href="pi.css" />
+</head>
+<body data-kind="open-board">
+	<header class="head">
+		<img src="logo.svg" alt="" />
+		<div>
+			<h1>Open Board</h1>
+			<p>Jump to one of your boards</p>
+		</div>
+	</header>
+
+	<p class="lead">On the board, <strong>Back</strong> brings you straight back here.</p>
+
+	<div class="trail" aria-live="polite">
+		<div class="trail-label" id="trail-label">Where this key is</div>
+		<div class="trail-row" id="trail-row"></div>
+	</div>
+
+	<div class="notice" id="unsupported" hidden></div>
+
+	<div class="field">
+		<label for="board">Board</label>
+		<select id="board"></select>
+		<div class="hint" id="board-hint"></div>
+	</div>
+
+	<div class="field">
+		<span class="label" id="page-label">Open on</span>
+		<div class="seg" role="group" aria-labelledby="page-label">
+			<button type="button" data-page="first" aria-pressed="true">First page</button>
+			<button type="button" data-page="remembered" aria-pressed="false">Last used page</button>
+			<button type="button" data-page="n" aria-pressed="false">Page…</button>
+		</div>
+		<div class="page-n" id="page-n">
+			<input type="number" id="page-number" min="1" max="99" value="2" aria-label="Page number" />
+			<span class="hint" style="margin:0">of the board</span>
+		</div>
+	</div>
+
+	<div class="field">
+		<label class="switch">
+			<span>Show the board's name on the key</span>
+			<input type="checkbox" id="show-name" checked />
+			<span class="track" aria-hidden="true"></span>
+		</label>
+		<div class="hint">Turn off to use your own title. Renaming a board in Stream Deck updates the key within a minute.</div>
+	</div>
+
+	<details>
+		<summary>How boards work</summary>
+		<div class="body">
+			<p>Boards are profiles that belong to this plugin. They look and work like any other profile: add keys, pages and folders, rename them in Stream Deck's Preferences.</p>
+			<p>Unlike your normal profiles, a board can be opened from anywhere, and it knows how to get you back: <strong>Back</strong> returns to the normal profile you came from, <strong>Board Back</strong> to the previous board.</p>
+			<p>A board doesn't exist on your deck until you open it the first time. Stream Deck asks once whether to install it.</p>
+		</div>
+	</details>
+	<div class="notice" id="orphans" hidden></div>
+
+	<section class="general">
+		<label class="switch">
+			<span>After a restart, reopen the board you were on</span>
+			<input type="checkbox" data-option="restoreOnStart" />
+			<span class="track" aria-hidden="true"></span>
+		</label>
+		<div class="hint">Stream Deck itself always starts on a normal profile. Applies to all keys.</div>
+	</section>
+
+	<section class="backups">
+		<h2>Backups</h2>
+		<div class="status" id="backup-status">Checking…</div>
+		<div class="buttons">
+			<button class="btn primary" id="backup-now" type="button">Back up now</button>
+			<button class="btn" id="open-backups" type="button">Open backups folder</button>
+		</div>
+		<div class="hint">To restore a board, double-click its file in the backups folder.</div>
+	</section>
+
+	<div class="foot" id="version"></div>
+	<div class="toast" id="toast" role="status" aria-live="polite"></div>
+	<script src="pi.js"></script>
+	<script>
+		const boardSel = $("#board");
+		const segs = [...document.querySelectorAll(".seg button")];
+
+		function pageMode(p) { return p === "remembered" ? "remembered" : !p || p === "first" ? "first" : "n"; }
+
+		function renderPage(p) {
+			const mode = pageMode(p);
+			segs.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.page === mode)));
+			$("#page-n").classList.toggle("show", mode === "n");
+			if (mode === "n") $("#page-number").value = p;
+		}
+
+		function renderBoards(state) {
+			const installed = new Map((state.installed || []).map((b) => [b.n, b.name]));
+			const current = Number(PB.settings.board) || state.board || 1;
+			boardSel.textContent = "";
+			const mine = el("optgroup"); mine.label = "Your boards";
+			const fresh = el("optgroup"); fresh.label = "New boards";
+			for (let n = 1; n <= state.device.boards; n++) {
+				const name = installed.get(n);
+				const o = el("option", "", name ? (name === `Board ${n}` ? name : `${name}  (Board ${n})`) : `Board ${n}`);
+				o.value = String(n);
+				(name ? mine : fresh).appendChild(o);
+			}
+			if (mine.childElementCount) boardSel.appendChild(mine);
+			boardSel.appendChild(fresh);
+			boardSel.value = String(current);
+			const hint = $("#board-hint");
+			if (installed.has(current)) hint.textContent = "This board is on your deck.";
+			else hint.textContent = "New board: the first press installs it. Stream Deck asks once.";
+		}
+
+		PB.onSettings = (s) => {
+			renderPage(s.page);
+			$("#show-name").checked = s.showName !== false;
+			if (PB.state) renderBoards(PB.state);
+		};
+
+		PB.onState = (state) => {
+			const un = $("#unsupported");
+			un.hidden = state.device.supported;
+			if (!state.device.supported) un.innerHTML = `<b>${escapeHtml(state.device.label)} has no boards.</b> Boards exist for the 15-key Stream Deck, Mini, XL, +, Neo and + XL.`;
+			if (state.device.supported) renderBoards(state);
+			renderPage(PB.settings.page);
+		};
+
+		boardSel.addEventListener("change", () => {
+			saveSettings({ board: Number(boardSel.value) });
+			if (PB.state) renderBoards(PB.state);
+		});
+		segs.forEach((b) => b.addEventListener("click", () => {
+			const mode = b.dataset.page;
+			saveSettings({ page: mode === "n" ? String(Math.max(1, Number($("#page-number").value) || 2)) : mode });
+			renderPage(PB.settings.page);
+		}));
+		$("#page-number").addEventListener("change", (e) => {
+			const n = Math.max(1, Math.min(99, Math.floor(Number(e.target.value) || 1)));
+			e.target.value = n;
+			saveSettings({ page: String(n) });
+		});
+		$("#show-name").addEventListener("change", (e) => saveSettings({ showName: e.target.checked }));
+	</script>
+</body>
+</html>

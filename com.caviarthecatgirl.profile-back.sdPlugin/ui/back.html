@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Back</title>
+	<link rel="stylesheet" href="pi.css" />
+</head>
+<body data-kind="back">
+	<header class="head">
+		<img src="logo.svg" alt="" />
+		<div>
+			<h1>Back</h1>
+			<p>Leave the boards</p>
+		</div>
+	</header>
+
+	<p class="lead">Takes you back to the <strong>normal profile you came from</strong>, like your game, no matter how many boards deep you are.</p>
+
+	<div class="trail" aria-live="polite">
+		<div class="trail-label" id="trail-label">Where this key is</div>
+		<div class="trail-row" id="trail-row"></div>
+		<div class="goes" id="goes" hidden></div>
+	</div>
+
+	<div class="notice" id="memory" hidden></div>
+
+	<div class="notice" id="on-normal" hidden><b>This key is on a normal profile.</b> Back only works on boards: Stream Deck doesn't let plugins leave a normal profile. Pressing it here shows a warning triangle.</div>
+
+	<details>
+		<summary>Tips</summary>
+		<div class="body">
+			<p>Put Back on every board, for example top-left. New boards already have one there.</p>
+			<p>Want to go back just one board instead? Use <strong>Board Back</strong>.</p>
+			<p>Play a sound and go back with one press: make a Multi Action with your sound key followed by Back.</p>
+		</div>
+	</details>
+	<div class="notice" id="orphans" hidden></div>
+
+	<section class="general">
+		<label class="switch">
+			<span>After a restart, reopen the board you were on</span>
+			<input type="checkbox" data-option="restoreOnStart" />
+			<span class="track" aria-hidden="true"></span>
+		</label>
+		<div class="hint">Stream Deck itself always starts on a normal profile. Applies to all keys.</div>
+	</section>
+
+	<section class="backups">
+		<h2>Backups</h2>
+		<div class="status" id="backup-status">Checking…</div>
+		<div class="buttons">
+			<button class="btn primary" id="backup-now" type="button">Back up now</button>
+			<button class="btn" id="open-backups" type="button">Open backups folder</button>
+		</div>
+		<div class="hint">To restore a board, double-click its file in the backups folder.</div>
+	</section>
+
+	<div class="foot" id="version"></div>
+	<div class="toast" id="toast" role="status" aria-live="polite"></div>
+	<script src="pi.js"></script>
+	<script>
+		PB.onState = (state) => { $("#on-normal").hidden = !(state.where && state.where.kind === "normal"); };
+	</script>
+</body>
+</html>

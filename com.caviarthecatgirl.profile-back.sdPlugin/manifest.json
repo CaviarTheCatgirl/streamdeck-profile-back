@@ -1,0 +1,4285 @@
+{
+	"$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+	"Name": "Profile Back",
+	"Version": "1.0.0.3",
+	"Author": "CaviarTheCatgirl",
+	"Description": "Boards you can open from any profile, and a Back key that takes you straight back to where you came from. Board Back steps back through boards, as deep as you go.",
+	"UUID": "com.caviarthecatgirl.profile-back",
+	"Actions": [
+		{
+			"Name": "Open Board",
+			"UUID": "com.caviarthecatgirl.profile-back.open-board",
+			"Icon": "imgs/actions/open-board/icon",
+			"Tooltip": "Opens one of your boards. The first press of a new board installs it (Stream Deck asks once).",
+			"PropertyInspectorPath": "ui/open-board.html",
+			"SupportedInMultiActions": true,
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/open-board/key",
+					"TitleAlignment": "bottom"
+				}
+			]
+		},
+		{
+			"Name": "Back",
+			"UUID": "com.caviarthecatgirl.profile-back.back",
+			"Icon": "imgs/actions/back/icon",
+			"Tooltip": "On a board: back to the normal profile you came from (e.g. your game), however many boards deep.",
+			"PropertyInspectorPath": "ui/back.html",
+			"SupportedInMultiActions": true,
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/back/key",
+					"TitleAlignment": "bottom"
+				}
+			]
+		},
+		{
+			"Name": "Board Back",
+			"UUID": "com.caviarthecatgirl.profile-back.board-back",
+			"Icon": "imgs/actions/board-back/icon",
+			"Tooltip": "On a board: one step back to the previous board. On the first board it works like Back.",
+			"PropertyInspectorPath": "ui/board-back.html",
+			"SupportedInMultiActions": true,
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/board-back/key",
+					"TitleAlignment": "bottom"
+				}
+			]
+		}
+	],
+	"Profiles": [
+		{
+			"Name": "boards/sd/0001",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0002",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0003",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0004",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0005",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0006",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0007",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0008",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0009",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0010",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0011",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0012",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0013",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0014",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0015",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0016",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0017",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0018",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0019",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0020",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0021",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0022",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0023",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0024",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0025",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0026",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0027",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0028",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0029",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0030",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0031",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0032",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0033",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0034",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0035",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0036",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0037",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0038",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0039",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0040",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0041",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0042",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0043",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0044",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0045",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0046",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0047",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0048",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0049",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0050",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0051",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0052",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0053",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0054",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0055",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0056",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0057",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0058",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0059",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0060",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0061",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0062",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0063",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0064",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0065",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0066",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0067",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0068",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0069",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0070",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0071",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0072",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0073",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0074",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0075",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0076",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0077",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0078",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0079",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0080",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0081",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0082",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0083",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0084",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0085",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0086",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0087",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0088",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0089",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0090",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0091",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0092",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0093",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0094",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0095",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0096",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0097",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0098",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0099",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/sd/0100",
+			"DeviceType": 0,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0001",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0002",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0003",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0004",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0005",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0006",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0007",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0008",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0009",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0010",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0011",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0012",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0013",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0014",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0015",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0016",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0017",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0018",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0019",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0020",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0021",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0022",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0023",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0024",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0025",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0026",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0027",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0028",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0029",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0030",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0031",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0032",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0033",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0034",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0035",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0036",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0037",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0038",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0039",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0040",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0041",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0042",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0043",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0044",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0045",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0046",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0047",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0048",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0049",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0050",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0051",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0052",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0053",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0054",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0055",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0056",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0057",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0058",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0059",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0060",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0061",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0062",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0063",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0064",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0065",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0066",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0067",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0068",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0069",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0070",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0071",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0072",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0073",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0074",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0075",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0076",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0077",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0078",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0079",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0080",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0081",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0082",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0083",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0084",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0085",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0086",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0087",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0088",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0089",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0090",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0091",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0092",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0093",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0094",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0095",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0096",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0097",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0098",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0099",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/mini/0100",
+			"DeviceType": 1,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0001",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0002",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0003",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0004",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0005",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0006",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0007",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0008",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0009",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0010",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0011",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0012",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0013",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0014",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0015",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0016",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0017",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0018",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0019",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0020",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0021",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0022",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0023",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0024",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0025",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0026",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0027",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0028",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0029",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0030",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0031",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0032",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0033",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0034",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0035",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0036",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0037",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0038",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0039",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0040",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0041",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0042",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0043",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0044",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0045",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0046",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0047",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0048",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0049",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0050",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0051",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0052",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0053",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0054",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0055",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0056",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0057",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0058",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0059",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0060",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0061",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0062",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0063",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0064",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0065",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0066",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0067",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0068",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0069",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0070",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0071",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0072",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0073",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0074",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0075",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0076",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0077",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0078",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0079",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0080",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0081",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0082",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0083",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0084",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0085",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0086",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0087",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0088",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0089",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0090",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0091",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0092",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0093",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0094",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0095",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0096",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0097",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0098",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0099",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/xl/0100",
+			"DeviceType": 2,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0001",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0002",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0003",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0004",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0005",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0006",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0007",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0008",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0009",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0010",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0011",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0012",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0013",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0014",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0015",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0016",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0017",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0018",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0019",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0020",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0021",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0022",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0023",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0024",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0025",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0026",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0027",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0028",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0029",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0030",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0031",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0032",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0033",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0034",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0035",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0036",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0037",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0038",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0039",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0040",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0041",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0042",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0043",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0044",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0045",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0046",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0047",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0048",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0049",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0050",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0051",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0052",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0053",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0054",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0055",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0056",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0057",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0058",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0059",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0060",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0061",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0062",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0063",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0064",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0065",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0066",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0067",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0068",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0069",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0070",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0071",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0072",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0073",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0074",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0075",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0076",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0077",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0078",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0079",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0080",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0081",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0082",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0083",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0084",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0085",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0086",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0087",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0088",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0089",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0090",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0091",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0092",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0093",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0094",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0095",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0096",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0097",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0098",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0099",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plus/0100",
+			"DeviceType": 7,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0001",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0002",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0003",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0004",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0005",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0006",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0007",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0008",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0009",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0010",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0011",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0012",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0013",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0014",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0015",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0016",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0017",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0018",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0019",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0020",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0021",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0022",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0023",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0024",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0025",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0026",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0027",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0028",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0029",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0030",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0031",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0032",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0033",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0034",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0035",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0036",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0037",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0038",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0039",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0040",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0041",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0042",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0043",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0044",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0045",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0046",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0047",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0048",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0049",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0050",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0051",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0052",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0053",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0054",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0055",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0056",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0057",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0058",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0059",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0060",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0061",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0062",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0063",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0064",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0065",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0066",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0067",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0068",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0069",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0070",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0071",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0072",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0073",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0074",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0075",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0076",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0077",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0078",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0079",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0080",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0081",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0082",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0083",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0084",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0085",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0086",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0087",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0088",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0089",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0090",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0091",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0092",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0093",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0094",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0095",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0096",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0097",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0098",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0099",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/neo/0100",
+			"DeviceType": 9,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0001",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0002",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0003",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0004",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0005",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0006",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0007",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0008",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0009",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0010",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0011",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0012",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0013",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0014",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0015",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0016",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0017",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0018",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0019",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0020",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0021",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0022",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0023",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0024",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0025",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0026",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0027",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0028",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0029",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0030",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0031",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0032",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0033",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0034",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0035",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0036",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0037",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0038",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0039",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0040",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0041",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0042",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0043",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0044",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0045",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0046",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0047",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0048",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0049",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0050",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0051",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0052",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0053",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0054",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0055",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0056",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0057",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0058",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0059",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0060",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0061",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0062",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0063",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0064",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0065",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0066",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0067",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0068",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0069",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0070",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0071",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0072",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0073",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0074",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0075",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0076",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0077",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0078",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0079",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0080",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0081",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0082",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0083",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0084",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0085",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0086",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0087",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0088",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0089",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0090",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0091",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0092",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0093",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0094",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0095",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0096",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0097",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0098",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0099",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		},
+		{
+			"Name": "boards/plusxl/0100",
+			"DeviceType": 13,
+			"Readonly": false,
+			"DontAutoSwitchWhenInstalled": false,
+			"AutoInstall": false
+		}
+	],
+	"Category": "Profile Back",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "6.9"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	}
+}

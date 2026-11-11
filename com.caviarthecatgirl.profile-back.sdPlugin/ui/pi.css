@@ -1,0 +1,136 @@
+/* Profile Back — settings panel.
+   Sits inside the Stream Deck app, so it uses the app's own system font and
+   dark surfaces; one accent colour per key (set on <body data-kind>). */
+
+:root {
+	--bg: #2b2b2e;
+	--surface: #36363b;
+	--surface-2: #3f3f45;
+	--line: #4a4a52;
+	--text: #ececf0;
+	--muted: #a2a2ad;
+	--faint: #7c7c87;
+	--warn: #f0b44c;
+	--accent: #4c8dff;
+	--radius-s: 6px;
+	--radius-m: 9px;
+}
+body[data-kind="open-board"] { --accent: #2ec48e; }
+body[data-kind="back"] { --accent: #4c8dff; }
+body[data-kind="board-back"] { --accent: #a374ff; }
+
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text); }
+body {
+	font: 13px/1.45 "Segoe UI", system-ui, -apple-system, sans-serif;
+	padding: 14px 16px 18px;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* ── header ─────────────────────────────────────────────────────────────── */
+.head { display: flex; gap: 12px; align-items: center; margin-bottom: 6px; }
+.head img { width: 34px; height: 34px; border-radius: 9px; flex: none; }
+.head h1 { font-size: 15px; font-weight: 600; margin: 0; letter-spacing: 0.1px; }
+.head p { margin: 1px 0 0; color: var(--muted); font-size: 12px; }
+
+.lead { color: var(--muted); margin: 10px 0 0; max-width: 46ch; }
+.lead strong { color: var(--text); font-weight: 600; }
+
+/* ── the trail: where this key sits / the board history ─────────────────── */
+.trail { margin: 16px 0 4px; }
+.goes { margin-top: 9px; font-size: 12px; color: var(--muted); }
+.goes b { color: var(--text); font-weight: 600; }
+.trail-label { font-size: 12px; color: var(--muted); margin-bottom: 7px; }
+.trail-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 0; }
+.stop {
+	display: inline-flex; align-items: center; gap: 6px;
+	padding: 4px 10px; border-radius: 999px;
+	background: var(--surface); color: var(--muted); font-size: 12px; white-space: nowrap;
+	max-width: 100%; overflow: hidden; text-overflow: ellipsis;
+}
+.stop.normal { background: transparent; border: 1px dashed var(--line); }
+.stop.here { background: var(--accent); color: #0e0e12; font-weight: 600; }
+.stop.unknown { background: transparent; border: 1px dashed var(--line); color: var(--faint); }
+.link { width: 14px; height: 2px; background: var(--line); flex: none; }
+
+/* ── fields ─────────────────────────────────────────────────────────────── */
+.field { margin-top: 16px; }
+.field > label, .field > .label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+.hint { font-size: 12px; color: var(--faint); margin-top: 6px; }
+.hint.warn { color: var(--warn); }
+
+select, input[type="number"] {
+	width: 100%; height: 32px; padding: 0 10px;
+	background: var(--surface); color: var(--text);
+	border: 1px solid var(--line); border-radius: var(--radius-s);
+	font: inherit; outline: none;
+}
+select { appearance: none; padding-right: 30px;
+	background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+	background-position: calc(100% - 15px) 14px, calc(100% - 10px) 14px; background-size: 5px 5px; background-repeat: no-repeat; }
+select:focus-visible, input:focus-visible, button:focus-visible, .seg button:focus-visible { border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 35%, transparent); }
+optgroup { color: var(--muted); font-style: normal; }
+option { color: var(--text); background: var(--surface); }
+
+/* segmented control */
+.seg { display: flex; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-s); padding: 2px; gap: 2px; }
+.seg button {
+	flex: 1; height: 26px; border: 0; border-radius: 4px; background: transparent;
+	color: var(--muted); font: inherit; font-size: 12px; cursor: pointer; outline: none;
+}
+.seg button[aria-pressed="true"] { background: var(--surface-2); color: var(--text); box-shadow: inset 0 -2px 0 var(--accent); }
+.page-n { display: none; margin-top: 8px; }
+.page-n.show { display: flex; align-items: center; gap: 8px; }
+.page-n input { width: 80px; }
+
+/* switch */
+.field > label.switch { display: flex; margin: 0; font-size: 13px; color: var(--text); }
+.switch { display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; }
+.switch input { position: absolute; opacity: 0; pointer-events: none; }
+.switch .track { width: 34px; height: 20px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); position: relative; flex: none; transition: background .15s; }
+.switch .track::after { content: ""; position: absolute; top: 2px; left: 2px; width: 14px; height: 14px; border-radius: 50%; background: var(--muted); transition: transform .15s, background .15s; }
+.switch input:checked + .track { background: var(--accent); border-color: var(--accent); }
+.switch input:checked + .track::after { transform: translateX(14px); background: #fff; }
+.switch input:focus-visible + .track { box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 35%, transparent); }
+
+/* notices */
+.notice { margin-top: 14px; padding: 10px 12px; border-radius: var(--radius-m); background: color-mix(in srgb, var(--warn) 12%, var(--bg)); border-left: 3px solid var(--warn); font-size: 12px; }
+.notice b { font-weight: 600; }
+.notice[hidden] { display: none; }
+
+/* how it works */
+details { margin-top: 18px; }
+summary { cursor: pointer; color: var(--muted); font-size: 12px; list-style: none; outline: none; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: "▸"; display: inline-block; width: 14px; transition: transform .15s; }
+details[open] summary::before { transform: rotate(90deg); }
+summary:focus-visible { color: var(--text); }
+details .body { margin-top: 8px; color: var(--muted); font-size: 12px; }
+details .body p { margin: 0 0 7px; max-width: 48ch; }
+
+/* ── general options ─────────────────────────────────────────────────── */
+.general { margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--line); }
+.general + .backups { margin-top: 18px; }
+.general .switch { font-size: 13px; }
+
+/* ── backups ────────────────────────────────────────────────────────────── */
+.backups { margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--line); }
+.backups h2 { font-size: 13px; font-weight: 600; margin: 0; }
+.backups .status { color: var(--muted); font-size: 12px; margin: 3px 0 10px; }
+.buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+button.btn {
+	height: 30px; padding: 0 12px; border-radius: var(--radius-s);
+	border: 1px solid var(--line); background: var(--surface); color: var(--text);
+	font: inherit; font-size: 12px; cursor: pointer; outline: none;
+}
+button.btn:hover { background: var(--surface-2); }
+button.btn.primary { border-color: transparent; background: var(--accent); color: #0e0e12; font-weight: 600; }
+button.btn.primary:hover { filter: brightness(1.08); }
+
+.toast { position: fixed; left: 16px; right: 16px; bottom: 12px; padding: 9px 12px; border-radius: var(--radius-m); background: var(--surface-2); border: 1px solid var(--line); font-size: 12px; opacity: 0; transform: translateY(6px); transition: opacity .2s, transform .2s; pointer-events: none; }
+.toast.show { opacity: 1; transform: none; }
+.toast.error { border-color: var(--warn); }
+
+.foot { margin-top: 14px; color: var(--faint); font-size: 11px; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

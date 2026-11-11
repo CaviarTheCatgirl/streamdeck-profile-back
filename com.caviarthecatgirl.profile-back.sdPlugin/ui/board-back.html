@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Board Back</title>
+	<link rel="stylesheet" href="pi.css" />
+</head>
+<body data-kind="board-back">
+	<header class="head">
+		<img src="logo.svg" alt="" />
+		<div>
+			<h1>Board Back</h1>
+			<p>One board back</p>
+		</div>
+	</header>
+
+	<p class="lead">Goes back to the <strong>previous board</strong> you opened. On the first board it works like Back and returns to your profile.</p>
+
+	<div class="trail" aria-live="polite">
+		<div class="trail-label" id="trail-label">Where this key is</div>
+		<div class="trail-row" id="trail-row"></div>
+		<div class="goes" id="goes" hidden></div>
+	</div>
+
+	<div class="notice" id="memory" hidden></div>
+
+	<div class="notice" id="on-normal" hidden><b>This key is on a normal profile.</b> Board Back only works on boards. Pressing it here shows a warning triangle.</div>
+
+	<details>
+		<summary>How the history works</summary>
+		<div class="body">
+			<p>Opening a board from another board adds a step. Opening one from your normal profile starts fresh. There is no limit to how deep it goes, and it survives restarts.</p>
+			<p>Pressing Back, or leaving the boards any other way, clears the history.</p>
+		</div>
+	</details>
+	<div class="notice" id="orphans" hidden></div>
+
+	<section class="general">
+		<label class="switch">
+			<span>After a restart, reopen the board you were on</span>
+			<input type="checkbox" data-option="restoreOnStart" />
+			<span class="track" aria-hidden="true"></span>
+		</label>
+		<div class="hint">Stream Deck itself always starts on a normal profile. Applies to all keys.</div>
+	</section>
+
+	<section class="backups">
+		<h2>Backups</h2>
+		<div class="status" id="backup-status">Checking…</div>
+		<div class="buttons">
+			<button class="btn primary" id="backup-now" type="button">Back up now</button>
+			<button class="btn" id="open-backups" type="button">Open backups folder</button>
+		</div>
+		<div class="hint">To restore a board, double-click its file in the backups folder.</div>
+	</section>
+
+	<div class="foot" id="version"></div>
+	<div class="toast" id="toast" role="status" aria-live="polite"></div>
+	<script src="pi.js"></script>
+	<script>
+		PB.onState = (state) => { $("#on-normal").hidden = !(state.where && state.where.kind === "normal"); };
+	</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build output (npm run build)
+com.caviarthecatgirl.profile-back.sdPlugin/bin/
+com.caviarthecatgirl.profile-back.sdPlugin/boards/
+*.js.map
+*.streamDeckPlugin
+
+# Logs
+logs/
+*.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
