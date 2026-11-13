@@ -176,6 +176,18 @@ export function stateOf(deviceId: string): NavState {
 }
 export const historyOf = (deviceId: string): string[] => [...dev(deviceId).stack];
 
+/**
+ * True while one of our own switches is under way (sent, new profile not on
+ * screen yet). The keys still visible belong to the profile being left, so
+ * their badge must not change: pressing Back uses up Stream Deck's memory a
+ * moment before the board goes away, and badging the board's keys then would
+ * leave them showing the warning the next time that board opens.
+ */
+export function switching(deviceId: string): boolean {
+	const e = dev(deviceId).expect;
+	return e !== null && e.firstAppear === null && Date.now() <= e.until;
+}
+
 // ── learning where keys are ─────────────────────────────────────────────────
 
 /** Keys appearing within this long of the first one after a switch belong to the new profile. */
@@ -324,9 +336,10 @@ export async function openBoard(deviceId: string, from: Where | null, board: str
 		else if (d.memory !== d.origin) log("nav.memory-kept", { memory: d.memory, origin: d.origin }); // …unless it still holds an older one (3a)
 		d.leftWithoutBack = false;
 	}
-	save();
 	// The first open of a board shows Stream Deck's install prompt; allow time to click it.
+	// (Expect before save: the keys on screen are leaving, their badge must not change.)
 	expect(d, { kind: "board", board }, 30_000);
+	save();
 	log("nav.open", { board, page: page ?? "remembered", history: d.stack.length, origin: d.origin, memory: d.memory });
 	await streamDeck.profiles.switchToProfile(deviceId, board, page);
 }
@@ -342,9 +355,11 @@ export async function backToNormal(deviceId: string, onNothing?: () => void): Pr
 	d.stack = [];
 	d.memory = null; // used up
 	d.leftWithoutBack = false;
-	save();
+	// Expect before save: memory is used up while the board is still on screen,
+	// and its keys must not flash the warning on their way out.
 	expect(d, { kind: "normal" }, 5_000);
 	const e = d.expect;
+	save();
 	log("nav.back", { expected: expected ?? "(nothing)" });
 	// Known in advance (the prediction held in every real-deck test): Stream Deck
 	// remembers nothing, so Back can't go anywhere. Alert right away; still ask
@@ -359,6 +374,7 @@ export async function backToNormal(deviceId: string, onNothing?: () => void): Pr
 		if (d.expect === e && e?.firstAppear === null) {
 			log("nav.back-did-nothing", {});
 			d.expect = null;
+			changed(deviceId); // still on the board, now with nothing remembered: badge it
 			if (!alerted) onNothing?.();
 		}
 	}, 1200).unref?.();
@@ -374,8 +390,8 @@ export async function boardBack(deviceId: string, from: Where | null, onNothing?
 		await backToNormal(deviceId, onNothing);
 		return "normal";
 	}
-	save();
 	expect(d, { kind: "board", board: target }, 30_000);
+	save();
 	log("nav.board-back", { to: target, history: d.stack.length });
 	await streamDeck.profiles.switchToProfile(deviceId, target);
 	return "board";

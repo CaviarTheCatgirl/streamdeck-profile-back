@@ -209,6 +209,7 @@ try {
 	press("b1-bb");
 	const bb3 = await switched();
 	ok(bb3 && !bb3.payload?.profile, "Board Back on the first board → Stream Deck's previous profile (like Back)");
+	ok(!since().some((m) => m.event === "setImage" && String(m.payload?.image ?? "").endsWith("key-warn")), "…and the board's keys don't flash the warning on the way out");
 	show(["b1-back", "b1-bb", "b1-open"], [["open-board", "g1-open"], ["back", "g1-back", {}]]);
 	await sleep(250);
 	ok(stampOf("g1-open") === "normal" && stampOf("g1-back") === "normal", "keys on the normal profile get stamped normal");
@@ -257,6 +258,7 @@ try {
 	press(`c${at}-back`);
 	const home = await switched();
 	ok(home && !home.payload?.profile, "Back from board 5 of 8 → straight to the normal profile");
+	ok(!since().some((m) => m.event === "setImage" && String(m.payload?.image ?? "").endsWith("key-warn")), "…and the board's keys don't flash the warning on the way out");
 	show(prev, [["open-board", "g1-open"], ["back", "g1-back"]]);
 	await sleep(200);
 	ok(history().length === 0, "Back clears the history");

@@ -1,6 +1,6 @@
 {
     "name": "profile-back",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Stream Deck plugin: boards you can open from any profile, with Back and Board Back keys.",
     "license": "MIT",
     "private": true,

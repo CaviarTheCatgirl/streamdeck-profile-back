@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1.0
+
+**Fixes**
+- Back / Board Back no longer flash the amber warning badge for a split second when a board opens. Pressing Back used to badge the board's keys just before leaving, and Stream Deck showed that leftover image on the next visit. Keys that are leaving now keep their image; the badge still appears when Back really would go somewhere unexpected or nowhere.
+
 ## 1.0.0.3 — first release
 
 **Keys**

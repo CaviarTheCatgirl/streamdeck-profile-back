@@ -7,7 +7,7 @@ import { backupNow, backupStatus, backupsDir } from "../backups";
 import { BOARD_DEVICE, DEVICE_LABEL, boardName, forgetInventory, inventory, parseBoardPath, shippedCounts } from "../boards";
 import { log, warn } from "../log";
 import { homeOf } from "../keys";
-import { backStatus, decode, KEY_ID, keyAppeared, keyDisappeared, onNavChange, STAMP, stateOf, whereIs, type Where } from "../navigator";
+import { backStatus, decode, KEY_ID, keyAppeared, keyDisappeared, onNavChange, STAMP, stateOf, switching, whereIs, type Where } from "../navigator";
 import { getOptions, setOption, type Options } from "../options";
 import { pluginVersion } from "../paths";
 import { openFolder } from "../system";
@@ -44,6 +44,7 @@ export abstract class BaseAction<T extends JsonObject> extends SingletonAction<T
 	protected async refreshBadges(deviceId?: string): Promise<void> {
 		for (const a of this.actions) {
 			if (!a.isKey() || (deviceId && a.device.id !== deviceId)) continue;
+			if (switching(a.device.id)) continue; // these keys are leaving; leave their image alone
 			const want = this.warn(a.device.id);
 			if (this.badged.get(a.id) === want) continue;
 			this.badged.set(a.id, want);

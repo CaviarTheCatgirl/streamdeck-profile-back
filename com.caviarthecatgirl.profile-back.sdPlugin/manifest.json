@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
 	"Name": "Profile Back",
-	"Version": "1.0.0.3",
+	"Version": "1.0.1.0",
 	"Author": "CaviarTheCatgirl",
 	"Description": "Boards you can open from any profile, and a Back key that takes you straight back to where you came from. Board Back steps back through boards, as deep as you go.",
 	"UUID": "com.caviarthecatgirl.profile-back",
